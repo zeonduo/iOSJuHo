@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "YTPlayerView.h"
+
 
 @interface ViewController ()
 

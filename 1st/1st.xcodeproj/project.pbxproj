@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A123A9E134EDDC8B06DCB1A9 /* libPods-1st.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */; };
 		E6C3F9101E0148540025D22D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F90F1E0148540025D22D /* main.m */; };
 		E6C3F9131E0148540025D22D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F9121E0148540025D22D /* AppDelegate.m */; };
 		E6C3F9161E0148540025D22D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F9151E0148540025D22D /* ViewController.m */; };
@@ -32,9 +33,46 @@
 			remoteGlobalIDString = E6C3F90A1E0148530025D22D;
 			remoteInfo = 1st;
 		};
+		E6C3F9621E014F1C0025D22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GTLOSXCore;
+		};
+		E6C3F9641E014F1C0025D22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4469DB41C40229D00BCFAA1;
+			remoteInfo = GTLiOSCore;
+		};
+		E6C3F9661E014F1C0025D22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4368F721B8233BF00E17643;
+			remoteInfo = GTLiOSUnitTests;
+		};
+		E6C3F9681E014F1C0025D22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
+			remoteInfo = GTLOSXUnitTests;
+		};
+		E6C3F96A1E014F1C0025D22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = OSXDevTool;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22E3D386A74A63DDFC6CC6AE /* Pods-1st.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1st.debug.xcconfig"; path = "Pods/Target Support Files/Pods-1st/Pods-1st.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0B0FAA056E00E99F9C124A /* Pods-1st.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1st.release.xcconfig"; path = "Pods/Target Support Files/Pods-1st/Pods-1st.release.xcconfig"; sourceTree = "<group>"; };
 		E6C3F90B1E0148540025D22D /* 1st.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1st.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C3F90F1E0148540025D22D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C3F9111E0148540025D22D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +89,8 @@
 		E6C3F92F1E0148540025D22D /* 1stUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1stUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C3F9331E0148540025D22D /* _stUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _stUITests.m; sourceTree = "<group>"; };
 		E6C3F9351E0148540025D22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTLCore.xcodeproj; path = "../../../../Downloads/google-api-objectivec-client-master/Source/GTLCore.xcodeproj"; sourceTree = "<group>"; };
+		EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-1st.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A123A9E134EDDC8B06DCB1A9 /* libPods-1st.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360A7A589B715D4ACDFAACDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22E3D386A74A63DDFC6CC6AE /* Pods-1st.debug.xcconfig */,
+				8F0B0FAA056E00E99F9C124A /* Pods-1st.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E6C3F9021E0148530025D22D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +135,8 @@
 				E6C3F9271E0148540025D22D /* 1stTests */,
 				E6C3F9321E0148540025D22D /* 1stUITests */,
 				E6C3F90C1E0148540025D22D /* Products */,
+				E6C3F9591E014F1B0025D22D /* Frameworks */,
+				360A7A589B715D4ACDFAACDD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +192,27 @@
 			path = 1stUITests;
 			sourceTree = "<group>";
 		};
+		E6C3F9591E014F1B0025D22D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */,
+				EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6C3F95B1E014F1C0025D22D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3F9631E014F1C0025D22D /* GTL.framework */,
+				E6C3F9651E014F1C0025D22D /* GTL.framework */,
+				E6C3F9671E014F1C0025D22D /* GTLiOSUnitTests.xctest */,
+				E6C3F9691E014F1C0025D22D /* GTLUnitTests.xctest */,
+				E6C3F96B1E014F1C0025D22D /* OSXDevTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C3F9381E0148540025D22D /* Build configuration list for PBXNativeTarget "1st" */;
 			buildPhases = (
+				2FE02E04DFB5FF5B0DC6DB72 /* [CP] Check Pods Manifest.lock */,
 				E6C3F9071E0148530025D22D /* Sources */,
 				E6C3F9081E0148530025D22D /* Frameworks */,
 				E6C3F9091E0148530025D22D /* Resources */,
+				865C8B680A7A9BE1438C372C /* [CP] Embed Pods Frameworks */,
+				6AC2C954AAD0CAFC126B6CA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +311,12 @@
 			mainGroup = E6C3F9021E0148530025D22D;
 			productRefGroup = E6C3F90C1E0148540025D22D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E6C3F95B1E014F1C0025D22D /* Products */;
+					ProjectRef = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E6C3F90A1E0148530025D22D /* 1st */,
@@ -243,6 +325,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E6C3F9631E014F1C0025D22D /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = E6C3F9621E014F1C0025D22D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6C3F9651E014F1C0025D22D /* GTL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GTL.framework;
+			remoteRef = E6C3F9641E014F1C0025D22D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6C3F9671E014F1C0025D22D /* GTLiOSUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLiOSUnitTests.xctest;
+			remoteRef = E6C3F9661E014F1C0025D22D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6C3F9691E014F1C0025D22D /* GTLUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTLUnitTests.xctest;
+			remoteRef = E6C3F9681E014F1C0025D22D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E6C3F96B1E014F1C0025D22D /* OSXDevTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = OSXDevTool;
+			remoteRef = E6C3F96A1E014F1C0025D22D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6C3F9091E0148530025D22D /* Resources */ = {
@@ -270,6 +390,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FE02E04DFB5FF5B0DC6DB72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC2C954AAD0CAFC126B6CA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-1st/Pods-1st-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865C8B680A7A9BE1438C372C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-1st/Pods-1st-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6C3F9071E0148530025D22D /* Sources */ = {
@@ -423,24 +591,34 @@
 		};
 		E6C3F9391E0148540025D22D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E3D386A74A63DDFC6CC6AE /* Pods-1st.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EM8AF49BSE;
 				INFOPLIST_FILE = 1st/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zeon.prod.-st";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zeon.prod.1st;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		E6C3F93A1E0148540025D22D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0B0FAA056E00E99F9C124A /* Pods-1st.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EM8AF49BSE;
 				INFOPLIST_FILE = 1st/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zeon.prod.-st";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zeon.prod.1st;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -514,6 +692,7 @@
 				E6C3F93A1E0148540025D22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6C3F93B1E0148540025D22D /* Build configuration list for PBXNativeTarget "1stTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +701,7 @@
 				E6C3F93D1E0148540025D22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6C3F93E1E0148540025D22D /* Build configuration list for PBXNativeTarget "1stUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +710,7 @@
 				E6C3F9401E0148540025D22D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
