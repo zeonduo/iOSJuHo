@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A123A9E134EDDC8B06DCB1A9 /* libPods-1st.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */; };
 		E617431F1E019584008D3685 /* youTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E617431E1E019584008D3685 /* youTubeViewController.m */; };
 		E61743221E019EF2008D3685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C3F9171E0148540025D22D /* Main.storyboard */; };
 		E6C3F9101E0148540025D22D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F90F1E0148540025D22D /* main.m */; };
@@ -18,6 +17,7 @@
 		E6C3F9291E0148540025D22D /* _stTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F9281E0148540025D22D /* _stTests.m */; };
 		E6C3F9341E0148540025D22D /* _stUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F9331E0148540025D22D /* _stUITests.m */; };
 		E6D044D11E01A32B0069AA14 /* libyoutube-ios-player-helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D044D01E01A32B0069AA14 /* libyoutube-ios-player-helper.a */; };
+		E6D0453F1E026CFC0069AA14 /* Netprotocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D0453E1E026CFC0069AA14 /* Netprotocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,41 +34,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E6C3F90A1E0148530025D22D;
 			remoteInfo = 1st;
-		};
-		E6C3F9621E014F1C0025D22D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
-			remoteInfo = GTLOSXCore;
-		};
-		E6C3F9641E014F1C0025D22D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F4469DB41C40229D00BCFAA1;
-			remoteInfo = GTLiOSCore;
-		};
-		E6C3F9661E014F1C0025D22D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F4368F721B8233BF00E17643;
-			remoteInfo = GTLiOSUnitTests;
-		};
-		E6C3F9681E014F1C0025D22D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F12027D11A4CA2F00BEB470;
-			remoteInfo = GTLOSXUnitTests;
-		};
-		E6C3F96A1E014F1C0025D22D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
-			remoteInfo = OSXDevTool;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,9 +58,10 @@
 		E6C3F92F1E0148540025D22D /* 1stUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1stUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C3F9331E0148540025D22D /* _stUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _stUITests.m; sourceTree = "<group>"; };
 		E6C3F9351E0148540025D22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTLCore.xcodeproj; path = "../../../../Downloads/google-api-objectivec-client-master/Source/GTLCore.xcodeproj"; sourceTree = "<group>"; };
 		E6D044D01E01A32B0069AA14 /* libyoutube-ios-player-helper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libyoutube-ios-player-helper.a"; path = "../../../../Library/Developer/Xcode/DerivedData/1st-fpyjkoxknjbbrralpxubdezgwcqi/Build/Products/Debug-iphonesimulator/youtube-ios-player-helper/libyoutube-ios-player-helper.a"; sourceTree = "<group>"; };
-		EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-1st.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D045041E0221AB0069AA14 /* NetProtocolDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetProtocolDelegate.h; path = protocol/NetProtocolDelegate.h; sourceTree = "<group>"; };
+		E6D0453D1E026CFC0069AA14 /* Netprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Netprotocol.h; path = protocol/Netprotocol.h; sourceTree = "<group>"; };
+		E6D0453E1E026CFC0069AA14 /* Netprotocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Netprotocol.m; path = protocol/Netprotocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D044D11E01A32B0069AA14 /* libyoutube-ios-player-helper.a in Frameworks */,
-				A123A9E134EDDC8B06DCB1A9 /* libPods-1st.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +133,7 @@
 		E6C3F90D1E0148540025D22D /* 1st */ = {
 			isa = PBXGroup;
 			children = (
+				E6D045031E02218A0069AA14 /* protocol */,
 				E61743171E01954A008D3685 /* ViewController */,
 				E6C3F9111E0148540025D22D /* AppDelegate.h */,
 				E6C3F9121E0148540025D22D /* AppDelegate.m */,
@@ -212,22 +178,18 @@
 			isa = PBXGroup;
 			children = (
 				E6D044D01E01A32B0069AA14 /* libyoutube-ios-player-helper.a */,
-				E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */,
-				EB0DB7E09C88A7DFD4F16C23 /* libPods-1st.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6C3F95B1E014F1C0025D22D /* Products */ = {
+		E6D045031E02218A0069AA14 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				E6C3F9631E014F1C0025D22D /* GTL.framework */,
-				E6C3F9651E014F1C0025D22D /* GTL.framework */,
-				E6C3F9671E014F1C0025D22D /* GTLiOSUnitTests.xctest */,
-				E6C3F9691E014F1C0025D22D /* GTLUnitTests.xctest */,
-				E6C3F96B1E014F1C0025D22D /* OSXDevTool */,
+				E6D045041E0221AB0069AA14 /* NetProtocolDelegate.h */,
+				E6D0453D1E026CFC0069AA14 /* Netprotocol.h */,
+				E6D0453E1E026CFC0069AA14 /* Netprotocol.m */,
 			);
-			name = Products;
+			name = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,12 +290,6 @@
 			mainGroup = E6C3F9021E0148530025D22D;
 			productRefGroup = E6C3F90C1E0148540025D22D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E6C3F95B1E014F1C0025D22D /* Products */;
-					ProjectRef = E6C3F95A1E014F1C0025D22D /* GTLCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E6C3F90A1E0148530025D22D /* 1st */,
@@ -342,44 +298,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E6C3F9631E014F1C0025D22D /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = E6C3F9621E014F1C0025D22D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6C3F9651E014F1C0025D22D /* GTL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GTL.framework;
-			remoteRef = E6C3F9641E014F1C0025D22D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6C3F9671E014F1C0025D22D /* GTLiOSUnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLiOSUnitTests.xctest;
-			remoteRef = E6C3F9661E014F1C0025D22D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6C3F9691E014F1C0025D22D /* GTLUnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = GTLUnitTests.xctest;
-			remoteRef = E6C3F9681E014F1C0025D22D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E6C3F96B1E014F1C0025D22D /* OSXDevTool */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = OSXDevTool;
-			remoteRef = E6C3F96A1E014F1C0025D22D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E6C3F9091E0148530025D22D /* Resources */ = {
@@ -465,6 +383,7 @@
 				E6C3F9131E0148540025D22D /* AppDelegate.m in Sources */,
 				E617431F1E019584008D3685 /* youTubeViewController.m in Sources */,
 				E6C3F9101E0148540025D22D /* main.m in Sources */,
+				E6D0453F1E026CFC0069AA14 /* Netprotocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +539,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zeon.prod.1st;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.zeonProd1st;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -638,7 +557,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zeon.prod.1st;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.zeonProd1st;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
