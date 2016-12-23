@@ -18,6 +18,7 @@
 		E6C3F9341E0148540025D22D /* _stUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F9331E0148540025D22D /* _stUITests.m */; };
 		E6D044D11E01A32B0069AA14 /* libyoutube-ios-player-helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D044D01E01A32B0069AA14 /* libyoutube-ios-player-helper.a */; };
 		E6D0453F1E026CFC0069AA14 /* Netprotocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D0453E1E026CFC0069AA14 /* Netprotocol.m */; };
+		E6F070B81E03C8C000581BE2 /* cate_product.json in Resources */ = {isa = PBXBuildFile; fileRef = E6F070B71E03C8C000581BE2 /* cate_product.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E6D045041E0221AB0069AA14 /* NetProtocolDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetProtocolDelegate.h; path = protocol/NetProtocolDelegate.h; sourceTree = "<group>"; };
 		E6D0453D1E026CFC0069AA14 /* Netprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Netprotocol.h; path = protocol/Netprotocol.h; sourceTree = "<group>"; };
 		E6D0453E1E026CFC0069AA14 /* Netprotocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Netprotocol.m; path = protocol/Netprotocol.m; sourceTree = "<group>"; };
+		E6F070B71E03C8C000581BE2 /* cate_product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cate_product.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				E6C3F91A1E0148540025D22D /* Assets.xcassets */,
 				E6C3F91C1E0148540025D22D /* LaunchScreen.storyboard */,
 				E6C3F91F1E0148540025D22D /* Info.plist */,
+				E6F070B71E03C8C000581BE2 /* cate_product.json */,
 				E6C3F90E1E0148540025D22D /* Supporting Files */,
 			);
 			path = 1st;
@@ -306,6 +309,7 @@
 			files = (
 				E61743221E019EF2008D3685 /* Main.storyboard in Resources */,
 				E6C3F91E1E0148540025D22D /* LaunchScreen.storyboard in Resources */,
+				E6F070B81E03C8C000581BE2 /* cate_product.json in Resources */,
 				E6C3F91B1E0148540025D22D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

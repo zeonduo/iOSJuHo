@@ -16,15 +16,15 @@
 
 //
 
-@property (unsafe_unretained, nonatomic) id <NetProtocolDelegate> theDelegate;
-
-@property (strong, nonatomic) NSMutableURLRequest   *theURLRequest;
-@property (strong, nonatomic) NSURLConnection       *theConnection;
-@property (strong, nonatomic) NSHTTPURLResponse     *theHttpResponse;
-@property (strong, nonatomic) NSMutableData         *theResponseData;
-@property (strong, nonatomic) NSDate                *requestTime;
-
-@property (copy,   nonatomic) NSString              *theAPICode;
+//@property (unsafe_unretained, nonatomic) id <NetProtocolDelegate> theDelegate;
+//
+//@property (strong, nonatomic) NSMutableURLRequest   *theURLRequest;
+//@property (strong, nonatomic) NSURLConnection       *theConnection;
+//@property (strong, nonatomic) NSHTTPURLResponse     *theHttpResponse;
+//@property (strong, nonatomic) NSMutableData         *theResponseData;
+//@property (strong, nonatomic) NSDate                *requestTime;
+//
+//@property (copy,   nonatomic) NSString              *theAPICode;
 
 //@property (strong, nonatomic) NetRequestItem        *theRequestItem;
 

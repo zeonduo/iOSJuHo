@@ -22,13 +22,13 @@
 }
 - (void)viewDidAppear:(BOOL)animated {
 //    [self.youtubeView loadWithVideoId:@"M7lc1UVf-VE"];
-    NSDictionary *playerVars = @{
-                                 @"playsinline" : @1,
-                                 };
-    [self.youtubeView loadWithVideoId:@"M7lc1UVf-VE" playerVars:playerVars];
-    
-//    NSLog(@"여기탐 : %@",[self.youtubeView loadWithPlaylistId:@"건담"]);
-    NSLog(@"여기탐 : %@",self.youtubeView.playlist);
+//    NSDictionary *playerVars = @{
+//                                 @"playsinline" : @1,
+//                                 };
+//    [self.youtubeView loadWithVideoId:@"M7lc1UVf-VE" playerVars:playerVars];
+//    
+////    NSLog(@"여기탐 : %@",[self.youtubeView loadWithPlaylistId:@"건담"]);
+//    NSLog(@"여기탐 : %@",self.youtubeView.playlist);
 //    [self playVideo];
     
 }
@@ -66,31 +66,22 @@
 //    } else {
 //        [self playVideo];
 //    }
-//    [self test];
-    [self sortDealAndOptionId];
+    [self test];
+//    [self sortDealAndOptionId];
+//    [self exam2];
+//    [self exam2];
 }
 
 - (void)test {
     // Set up your URL
-//    NSString *youtubeApi = @"https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet%2C+statistics&id=AKiiekaEHhI&key={AIzaSyDNnduc7310cOa7wXjsNHpPy6qUM5lPd68}";
-//    NSString *youtubeApi = @"https://www.googleapis.com/youtube/v3/channels?key={AIzaSyDNnduc7310cOa7wXjsNHpPy6qUM5lPd68}";
-    
-//    NSString *youtubeApi = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/channels?part=contentDetails&key="];
-    NSString *youtubeApi = [NSString stringWithFormat:@"https://www.googleapis.com/youtube/v3/videos?part=contentDetails%2C+snippet%2C+statistics&id=AKiiekaEHhI&key="];
-    NSString *key = @"AIzaSyBiq21RglcPBDsnfQTbK-pBf1yGv9kwsp8";
-    key = [key stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
-//    NSURL *url = [[NSURL alloc] initWithString:youtubeApi];
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",youtubeApi,key]];
-    NSLog(@"여기탐1 : %@",url);
-    NSLog(@"여기탐2 : %@",key);
+    NSString *givenAPIStr = [NSString stringWithFormat:@"https://demo2587971.mockable.io/images"];
+    NSURL *givenAPIUrl = [NSURL URLWithString:givenAPIStr];
     
     // Create your request
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:givenAPIUrl];
     
     // Send the request asynchronously
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
-        
-        NSLog(@"\ndata : %@ \nresponse : %@ \nconnectionError : %@",data,response,connectionError);
         
         // Callback, parse the data and check for errors
         if (data && !connectionError) {
@@ -98,11 +89,10 @@
             NSDictionary *jsonResult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
             
             if (!jsonError) {
-                NSLog(@"Response from YouTube: %@", jsonResult);
+                NSLog(@"Response from API: %@", jsonResult);
             }
         }
     }] resume];
-    
 }
 /*
 110,10 101,9 101,8 103,7 105,6 105,5 101,4 103,3 103,2
@@ -145,11 +135,79 @@
         if (checkingKey == NO) {
             [sortDataDic setObject:arrItem[1] forKey:[NSString stringWithFormat:@"%@",arrItem[0]]];
         }
-        NSLog(@"sortDataDic :%@",sortDataDic);
     }
     
     NSLog(@"sortDataDic :%@",sortDataDic);
 }
+
+- (void)exam2 {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cate_product" ofType:@"json"];
+    NSData* data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    NSArray *prdArr = [dict valueForKey:@"products"];
+    NSArray *smallCategorysArr = [dict valueForKey:@"smallCategorys"];
+    NSArray *bigCategorysArr = [dict valueForKey:@"bigCategorys"];
+    
+    NSMutableArray *parsingSmallCategorysMArr = [smallCategorysArr mutableCopy];
+    for (NSDictionary* prodItemDic in prdArr) {
+        NSInteger price = [[prodItemDic valueForKey:@"price"] integerValue];
+        NSInteger saleCnt = [[prodItemDic valueForKey:@"saleCnt"] integerValue];
+        NSNumber *salesAmount = [NSNumber numberWithInteger:price*saleCnt];
+        
+        NSMutableDictionary *newItemDict = [prodItemDic mutableCopy];
+        [newItemDict setObject:salesAmount forKey:@"sales amount"];
+        
+        NSInteger categoryIdInt = [[newItemDict valueForKey:@"smallCategoryId"] integerValue];
+        
+        if ([parsingSmallCategorysMArr[categoryIdInt] valueForKey:@"products"]) {
+            NSMutableArray *valueMuArr = [parsingSmallCategorysMArr[categoryIdInt] valueForKey:@"products"];
+            [valueMuArr addObject:newItemDict];
+            [[parsingSmallCategorysMArr[categoryIdInt] mutableCopy] setObject:valueMuArr forKey:@"products"];
+        } else {
+            NSMutableArray *valueMuArr = [NSMutableArray arrayWithObjects:newItemDict, nil];
+            NSMutableDictionary *mDicItem = [parsingSmallCategorysMArr[categoryIdInt] mutableCopy];
+            [mDicItem setObject:valueMuArr forKey:@"products"];
+            [parsingSmallCategorysMArr replaceObjectAtIndex:categoryIdInt withObject:mDicItem];
+        }
+    }
+
+    
+    NSMutableArray *resultSmallCategorysMArr = [[NSMutableArray alloc] init];
+    for (NSMutableDictionary *smallCategorysDict in parsingSmallCategorysMArr) {
+        NSArray *prdArrr =[smallCategorysDict valueForKey:@"products"];
+        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"sales amount" ascending:NO selector:@selector(compare:)];
+        prdArrr = [prdArrr sortedArrayUsingDescriptors:@[descriptor]];
+        [smallCategorysDict setObject:prdArrr forKey:@"products"];
+        [resultSmallCategorysMArr addObject:smallCategorysDict];
+    }
+    
+    
+    NSMutableArray *resultBigCategorysMArr = [[NSMutableArray alloc] init];
+    for (NSDictionary *bigCategorysItemDict in bigCategorysArr) {
+        NSArray *subCategorysArr = [bigCategorysItemDict valueForKey:@"subCategorys"];
+        
+        NSMutableArray *bigCategorysProdMArr = [[NSMutableArray alloc] init];
+        for (NSNumber *categoryNum in subCategorysArr) {
+            NSInteger categoryId = [categoryNum integerValue];
+            NSArray *prodArr =  [resultSmallCategorysMArr[categoryId] valueForKey:@"products"];
+            for (NSDictionary *prodDict in prodArr) {
+                [bigCategorysProdMArr addObject:prodDict];
+            }
+        }
+        
+        NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"sales amount" ascending:NO selector:@selector(compare:)];
+        NSArray *bigCategorysProdArr = [bigCategorysProdMArr copy];
+        bigCategorysProdArr = [bigCategorysProdArr sortedArrayUsingDescriptors:@[descriptor]];
+        
+        NSMutableDictionary *bigCategorysItemMDict = [bigCategorysItemDict mutableCopy];
+        [bigCategorysItemMDict setObject:bigCategorysProdArr forKey:@"products"];
+        [resultBigCategorysMArr addObject:bigCategorysItemMDict];
+    }
+    
+    NSLog(@"여기탐 : %@",resultBigCategorysMArr);
+}
+
 
 /*
 #pragma mark - Navigation

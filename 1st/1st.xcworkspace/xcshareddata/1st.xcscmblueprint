@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "452BBF1AE0E01C189AB8A4BE078479F448D97EE1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "452BBF1AE0E01C189AB8A4BE078479F448D97EE1" : 9223372036854775807,
+    "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98" : 9223372036854775807,
+    "9D01D5BCCDE322646FEB1945347C3CF4E96976E3" : 9223372036854775807,
+    "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A1C17BB2-0370-4447-82A4-0E595957EC29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "452BBF1AE0E01C189AB8A4BE078479F448D97EE1" : "iOSJuho\/",
+    "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98" : "..\/..\/google-api-objectivec-client",
+    "9D01D5BCCDE322646FEB1945347C3CF4E96976E3" : "..\/..\/google-api-objectivec-client\/Deps\/gtm-oauth2",
+    "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F" : "..\/..\/google-api-objectivec-client\/Deps\/gtm-session-fetcher"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "1st",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "1st\/1st.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:zeonduo\/iOSJuHo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "452BBF1AE0E01C189AB8A4BE078479F448D97EE1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/gtm-oauth2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D01D5BCCDE322646FEB1945347C3CF4E96976E3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/google-api-objectivec-client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D58DF7C3E72198199D1B65DDDAADD2A7790F9A98"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/google\/gtm-session-fetcher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD0B99C3A0EB9F5EAC9FDFC4A76471FB31CBC6F"
+    }
+  ]
+}
